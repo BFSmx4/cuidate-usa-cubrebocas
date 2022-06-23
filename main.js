@@ -23,7 +23,7 @@ console.log('ml5 version:', ml5.version);
 classifier = ml5.imageClassifier('https://teachablemachine.withgoogle.com/models/JiCnMynGt/model.json', modelLoaded);
 
 function modelLoaded() {
-    console.log('Model Loaded!');
+    console.log('¡Modelo cargado!');
 }
 
 function check() {
@@ -40,10 +40,10 @@ function gotResult(error, results) {
         document.getElementById("status").innerHTML = results[0].label;
         prediction_1 = results[0].label;
 
-        if (results[0].label == "Entry Accepted") {
+        if (results[0].label == "Entrada aceptada") {
             document.getElementById("update_emoji").innerHTML = "&#x1F637;";
         }
-        if (results[0].label == "Entry Denied") {
+        if (results[0].label == "Entrada denegada") {
             document.getElementById("update_emoji").innerHTML = "&#x26d4;";
         }
     }
