@@ -2,7 +2,7 @@
  
 <html>
     <head>
-      <title>Wear Masks, Stay safe</title>
+      <title>Cuídate, usa cubrebocas</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -19,34 +19,34 @@
     
       <center>
         <h3 class="btn btn-info heading">
-         Wear Masks, Stay Safe!
+         ¡Usa cubrebocas, cuídate!
         <br>
-        <span>&#x1F637;</span>  <!-- masked emoji -->
-        <span>&#x26d4;</span>   <!-- entry denied emoji -->
+        <span>&#x1F637;</span>  <!-- emoji con cubrebocas -->
+        <span>&#x26d4;</span>   <!-- emoji de entrada denegada -->
         </h3>
   
         <br><br>
   
-        <p style="font-size: 22px;">Take your picture before you enter the office premises.</p>
+        <p style="font-size: 22px;">Tómate una foto antes de entrar a las instalaciones de la oficina.</p>
   
         <div class="col-md-4 col-sm-12 col-xs-12">
-            <label>Webcam View - </label>
+            <label>Vista de la cámara web: </label>
             <div id="camera"></div>
             <br><br>
-            <button onclick="take_snapshot();" class="btn btn-warning">Capture Image</button>
+            <button onclick="take_snapshot();" class="btn btn-warning">Capturar imagen:</button>
         </div>
   
         <div class="col-md-4 col-sm-12 col-xs-12">
-            <label>Prediction 1 - </label>
+            <label>Prediccción 1: </label>
             <p class="status_update" id="status"></p>
             <p class="emoji" id="update_emoji"></p>
           </div>
   
         <div class="col-md-4 col-sm-12 col-xs-12">
-            <label>Snapshot - </label>
+            <label>Captura: </label>
             <div id="result"></div>
             <br><br>
-            <button onclick="check();" class="btn btn-success">Predict Emotion</button>
+            <button onclick="check();" class="btn btn-success">Predecir emoción:</button>
            </div>
   
       </center>
